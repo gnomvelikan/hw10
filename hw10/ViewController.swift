@@ -14,7 +14,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func changeColorTouchUpInside(_ sender: Any) {
+        if self.view.backgroundColor != UIColor.red {
+            self.view.backgroundColor = UIColor.red
+        } else {
+            self.view.backgroundColor = UIColor.white
+        }
+    }
+    
     @IBAction func checkHwTouchUpInside(_ sender: Any) {
     }
     
